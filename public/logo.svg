@@ -1,0 +1,12 @@
+<svg viewBox="0 0 600 180" xmlns="http://www.w3.org/2000/svg">
+  <!-- Icon: orbital/atom mark — scaled and placed into the lockup -->
+  <g transform="translate(20,20) scale(0.7778)">
+    <ellipse cx="90" cy="90" rx="70" ry="26" fill="none" stroke="#FF9A56" stroke-width="9" stroke-linecap="round"/>
+    <ellipse cx="90" cy="90" rx="70" ry="26" fill="none" stroke="#F36A4E" stroke-width="9" stroke-linecap="round" transform="rotate(60 90 90)"/>
+    <ellipse cx="90" cy="90" rx="70" ry="26" fill="none" stroke="#E63946" stroke-width="9" stroke-linecap="round" transform="rotate(120 90 90)"/>
+    <circle cx="90" cy="90" r="12" fill="#1A1A2E"/>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="195" y="101" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="42" font-weight="700" letter-spacing="-1" fill="#1A1A2E">Systemize<tspan fill="#E63946" font-weight="500"> Labs</tspan></text>
+</svg>

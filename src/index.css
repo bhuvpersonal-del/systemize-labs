@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "DM Serif Display", serif;
+  --font-sans: "DM Sans", sans-serif;
+  
+  --color-obsidian: #0D1224;
+  --color-cloud: #F7F8FC;
+  --color-ink: #11142B;
+  --color-signature-teal: #00D9C0;
+  --color-warm-amber: #FFB020;
+  --color-muted-slate: #6B7280;
+  --color-money-green: #18A999;
+}
+
+@layer utilities {
+  /* Scroll reveal animation styles */
+  .reveal-hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  
+  .reveal-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Accent pulse */
+  .pulse-glow {
+    box-shadow: 0 0 20px rgba(0, 217, 192, 0.15);
+    animation: pulseGlow 3s infinite ease-in-out;
+  }
+  
+  @keyframes pulseGlow {
+    0%, 100% {
+      box-shadow: 0 0 20px rgba(0, 217, 192, 0.15);
+      border-color: rgba(0, 217, 192, 0.3);
+    }
+    50% {
+      box-shadow: 0 0 35px rgba(0, 217, 192, 0.35);
+      border-color: rgba(0, 217, 192, 0.8);
+    }
+  }
+
+  /* Orbit animation values */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-12px) rotate(1.5deg);
+    }
+  }
+
+  .animate-float {
+    animation: float 4s ease-in-out infinite;
+  }
+}
+
+/* Custom CSS to handle scrollbar */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Scroll-triggered reveal helper */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-on-scroll.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+

@@ -1,0 +1,6 @@
+{
+  "name": "Systemize Labs",
+  "description": "Premium AI Voice Receptionist landing page for modern businesses.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
