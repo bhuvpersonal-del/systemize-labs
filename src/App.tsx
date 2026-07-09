@@ -385,12 +385,13 @@ export default function App() {
         }`}
       >
         <div className="max-w-7xl mx-auto flex items-center justify-between">
-          {/* Logo */}
-          <a href="#hero" className="flex items-center gap-2 group">
-            <span className="font-serif text-2xl font-bold tracking-tight text-white">
-              Systemize<span className="text-signature-teal">Labs</span>
-            </span>
-          </a>
+         {/* Logo */}
+<a href="#hero" className="flex items-center gap-2 group">
+  <img src="/logo.svg" alt="Systemize Labs" className="w-8 h-8 object-contain" />
+  <span className="font-serif text-2xl font-bold tracking-tight text-white">
+    Systemize<span className="text-signature-teal">Labs</span>
+  </span>
+</a>
 
           {/* Desktop Nav Links */}
           <div className="hidden md:flex items-center gap-8">
